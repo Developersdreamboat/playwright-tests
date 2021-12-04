@@ -4,6 +4,6 @@
   "description": "Run Playwright tests on GitHub Actions",
   "main": "checkTitle.spec.js",
   "scripts": {
-    "test": "npm test checkTitle.spec.js"
+    "test": "npx playwright test"
  }
 }
