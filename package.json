@@ -2,7 +2,7 @@
   "name": "playwright-github-action",
   "version": "1.0.0",
   "description": "Run Playwright tests on GitHub Actions",
-  "main": "index.js",
+  "main": "checkTitle.spec.js",
   "scripts": {
     "lint": "eslint checkTitle.spec.js",
     "package": "ncc build checkTitle.spec.js -o dist",
