@@ -4,8 +4,6 @@
   "description": "Run Playwright tests on GitHub Actions",
   "main": "checkTitle.spec.js",
   "scripts": {
-    "lint": "eslint checkTitle.spec.js",
-    "package": "ncc build checkTitle.spec.js -o dist",
-    "test": "eslint checkTitle.spec.js && jest"
+    "test": "npm test checkTitle.spec.js"
  }
 }
