@@ -4,6 +4,22 @@
   "description": "Run Playwright tests on GitHub Actions",
   "main": "checkTitle.spec.js",
   "scripts": {
-    "test": "npx playwright test"
- }
+    "lint": "eslint checkTitle.spec.js",
+    "package": "ncc build checkTitle.spec.js -o dist",
+    "test": "eslint checkTitle.spec.js && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Developersdreamboat/playwright-tests.git"
+  },
+  "homepage": "https://github.com/Developersdreamboat/playwright-tests",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "@actions/exec": "^1.0.3"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0"
+  }
 }
